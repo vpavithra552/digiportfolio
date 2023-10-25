@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0078d4;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pavithra.V</h1>
+        <p>Web developer</p>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>Summary</h2>
+            <p>I am a web developer with a passion for creating responsive and user-friendly websites. I have experience in HTML, CSS, JavaScript, and various web development frameworks.</p>
+        </section>
+        <section class="section">
+            <h2>Education</h2>
+            <p>Bachelor's Degree in Computer Science</p>
+            <p>Bharathiyar University</p>
+            <p>Graduated: May 2022</p>
+        </section>
+        <section class="section">
+            <h2>Work Experience</h2>
+            <p>Web Developer</p>
+            <p>Infotech Web Solutions</p>
+            <p>June 2023- Present</p>
+            <ul>
+                <li>Developed and maintained client websites using HTML, CSS, and JavaScript.</li>
+                <li>Collaborated with the design team to create visually appealing user interfaces.</li>
+                <li>Optimized websites for performance and SEO.</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Skills</h2>
+            <ul id="skillsList">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Front-end Frameworks (e.g., Bootstrap)</li>
+            </ul>
+            <button onclick="toggleSkills()">Toggle Skills</button>
+        </section>
+    </div>
+
+    <script>
+        function toggleSkills() {
+            var skillsList = document.getElementById('skillsList');
+            if (skillsList.style.display === 'none' || skillsList.style.display === '') {
+                skillsList.style.display = 'block';
+            } else {
+                skillsList.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
